@@ -3,15 +3,16 @@
   <div class="container {{ grid_size }}">
     {{ social_buttons::social_buttons() }}
     <div class="columns">
+      <div class="column col-3 col-lg-12 col-mx-auto" style="text-align: center;">
+        Last updated on {{ now() | date }}
+      </div>
       {% if config.extra.footer_tagline %}
-      <div class="column col-6 col-lg-12 col-mx-auto" style="text-align: center;">
+      <div class="column col-5 col-lg-12 col-mx-auto" style="text-align: center;">
         {{ config.extra.footer_tagline }}
       </div>
       {% endif %}
-      <div class="column col-6 col-lg-12 col-mx-auto" style="text-align: center;">
-        Made by <a href="https://github.com/gicrisf/">gicrisf</a> -
-        <strong>Zhuia</strong>&nbsp;<a href="https://github.com/gicrisf/zhuia">source code</a>
-        is licensed under <a href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.
+      <div class="column col-4 col-lg-12 col-mx-auto" style="text-align: center;">
+        Custom theme based on <a href="https://github.com/gicrisf/zhuia">Zhuia</a> by <a href="https://github.com/gicrisf/">gicrisf</a>.
       </div>
     </div>
   </div>
