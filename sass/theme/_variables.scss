@@ -1,5 +1,7 @@
 // Spectre Overrides
-$primary-color: #3085EE !default;
+@use "sass:color";
+// Was #3085EE
+$primary-color: #23b07f !default;
 $dark-color: #454d5d !default;
 $light-color: rgb(248, 248, 248) !default;
 $gray-color: lighten($dark-color, 40%) !default;
@@ -75,8 +77,10 @@ $highlight-color: #ffe9b3 !default;
 $body-bg: $bg-color-light !default;
 $body-font-color: lighten($dark-color, 5%) !default;
 $link-color: $primary-color !default;
-$link-color-dark: darken($link-color, 10%) !default;
-$link-color-light: lighten($link-color, 10%) !default;
+$link-color-dark: color.scale($link-color, $lightness: -10%) !default;
+//$link-color-dark: darken($link-color, 10%) !default;
+$link-color-light: color.scale($link-color, $lightness: 7%) !default;
+//$link-color-light: lighten($link-color, 10%) !default;
 
 // Fonts
 // Credit: https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/
