@@ -156,9 +156,9 @@ ul.pagination {
 .paginator {
   //background: linear-gradient(225deg,#3085EE 0%,#1167D0 65%,#001D4A 100%);
   background: linear-gradient(to right,
-    color.adjust($primary-color, $blackness: 50%) 0%,
+    color.scale($primary-color, $blackness: 60%) 0%,
     $primary-color 55%,
-    color.adjust($primary-color, $lightness: 25%, $saturation: -12%) 100%);
+    color.scale($primary-color, $lightness: 34%, $saturation: -18%) 100%);
 
   & .page-item a {
     color: white;
