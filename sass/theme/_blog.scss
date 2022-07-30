@@ -85,6 +85,11 @@
 
   }
 
+  .draft-card {
+    border: solid 1px $warning-color;
+    background-color: color.scale($light-color, $lightness: -3%);
+  }
+
   .card-footer {
     text-align: right;
   }

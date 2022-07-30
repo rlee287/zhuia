@@ -124,7 +124,11 @@
 {% endmacro cover %}
 
 {% macro card(page, full) %}
+{% if page.draft %}
+<div class="card draft-card">
+{% else %}
 <div class="card">
+{% endif %}
   {% if page.extra.cover_image %}
   {% if page.extra.cover_image is matching("[.](jpg|jpeg|png|gif)$") %}
   {% set parent_dir_rel_path = posts::parent_dir_rel_path(rel_path=page.relative_path) | trim %}
